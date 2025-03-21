@@ -9,7 +9,7 @@ import { themeContext } from "../context/ThemeContext"
 const NavbarLogo: React.FC = () => {
     const {theme} = useContext(themeContext)!
 
-    return <Image src={theme == "light" ? navbarLogo : navbarLogoDark} alt="AltBuilda Logo"/>
+    return <Image src={theme == "light" ? navbarLogo : navbarLogoDark} alt="AltBuilda Logo" width={142} height={36} placeholder="blur"/>
 }
 
 export default NavbarLogo
