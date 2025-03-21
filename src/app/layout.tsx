@@ -4,6 +4,7 @@ import "./globals.css";
 import ThemeProvider from "./context/ThemeContext";
 import ThemeWrapper from "./context/ThemeWrappper";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
           <ThemeWrapper>
             <Navbar />
             {children}
+            <Footer />
           </ThemeWrapper>
         </ThemeProvider>
       </body>
