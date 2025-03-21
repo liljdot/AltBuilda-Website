@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* footer end  */}
-                <aside className="flex flex-row justify-between w-full pb-12">
+                <aside className="flex flex-row justify-between w-full pb-12 text-white">
                     <p>© Copyright {new Date().getFullYear()}, - All right reserved</p>
 
                     <div className="flex flex-row gap-8">
