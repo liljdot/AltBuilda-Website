@@ -4,7 +4,7 @@ import { createContext, Dispatch, ReactNode, SetStateAction, useEffect, useState
 
 interface ContextProps {
     theme: "light" | "dark"
-    setTheme: Dispatch<SetStateAction<"light" | "dark">>
+    toggleTheme: () => void
 }
 
 interface ThemeProviderProps {
@@ -16,6 +16,11 @@ export const themeContext = createContext<ContextProps | null>(null)
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     const [theme, setTheme] = useState<"light" | "dark">("light")
     const [isMounted, setIsMounted] = useState<boolean>(false)
+
+    const toggleTheme = () => {
+        localStorage.setItem("theme", theme == "light" ? "dark" : "light")
+        setTheme(theme == "light" ? "dark" : "light")
+    }
 
     useEffect(() => {
         setIsMounted(true)
@@ -29,7 +34,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
     return (
         <>
-            <themeContext.Provider value={{ theme, setTheme }}>
+            <themeContext.Provider value={{ theme, toggleTheme }}>
                 {children}
             </themeContext.Provider>
         </>

@@ -4,11 +4,11 @@ import { useContext } from "react"
 import { themeContext } from "../context/ThemeContext"
 
 const ToggleTheme: React.FC = () => {
-    const {theme, setTheme} = useContext(themeContext)!
+    const {theme, toggleTheme} = useContext(themeContext)!
 
     return (
         <>
-            <button onClick={() => setTheme(theme == "light" ? "dark" : "light")} className="btn btn-base">Toggle</button>
+            <button onClick={toggleTheme} className="btn btn-base">Toggle</button>
         </>
     )
 }
