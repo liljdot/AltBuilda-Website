@@ -8,13 +8,7 @@ interface WrapperProps {
 }
 
 const ThemeWrapper: React.FC<WrapperProps> = ({children}) => {
-    const context = useContext(themeContext)
-
-    if (!context) {
-        throw new Error("Cannot find theme context")
-    }
-
-    const {theme} = context
+    const {theme} = useContext(themeContext)!
 
     return (
         <>

@@ -22,9 +22,10 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
         setTheme(localStorage.getItem("theme") == "dark" ? "dark" : "light")
     }, [])
 
-    if (!isMounted) {
-        return <>Loading...</>
-    }
+    // if (!isMounted) {
+    //     return <>Loading...</>
+    // }
+    // will cause entire site to build as a jsbundle
 
     return (
         <>
