@@ -1,6 +1,7 @@
 import heroSectionImage from "@/app/assets/hero-section-image.png"
 import Image from "next/image"
 import HeroSectionBG from "./HeroSectionBG"
+import ActionButton from "../ActionButton"
 
 const HeroSection: React.FC = () => {
 
@@ -18,6 +19,16 @@ const HeroSection: React.FC = () => {
 
                     <p className="mt-10 pr-21">Empowering businesses with tools to manage operations, connect with
                         peers,and drive growth effortlessly</p>
+
+                    <div className="flex flex-row gap-5 mt-14">
+                        <ActionButton to="/get-started" filled>
+                            Get started now
+                        </ActionButton>
+
+                        <ActionButton to="/services" text="primary">
+                            Explore Services
+                        </ActionButton>
+                    </div>
                 </div>
 
                 <div className="w-[45%]">
