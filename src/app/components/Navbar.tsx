@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
 
     return (
         <>
-            <div className="navbar bg-neutral sticky top-0 px-18.5 py-6 text-[1rem] font-semibold shadow-xl">
+            <div className="navbar bg-neutral sticky top-0 px-18.5 py-6 text-[1rem] font-semibold shadow-xl z-100">
                 <div className="navbar-start">
                     <div className="dropdown"> {/*sandwich for smaller screens */}
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

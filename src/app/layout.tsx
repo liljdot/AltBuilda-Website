@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} antialiased w-screen items-center`}
+        className={`${roboto.className} antialiased w-screen items-center overflow-x-hidden`}
       >
         <ThemeProvider>
           <ThemeWrapper>
