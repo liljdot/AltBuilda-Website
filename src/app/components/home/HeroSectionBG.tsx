@@ -14,7 +14,7 @@ const HeroSectionBG: React.FC<Props> = ({children}) => {
 
     return (
         <>
-            <section className="w-full bg-cover bg-no-repeat bg-center py-24 px-15 flex flex-row gap-0" style={{ backgroundImage: theme == "light" ? `url(${heroSectionBG.src})` : `url(${heroSectionBGDark.src})` }}>
+            <section className="w-full relative bg-cover bg-no-repeat bg-center py-24 px-15 flex flex-row gap-0 z-99" style={{ backgroundImage: theme == "light" ? `url(${heroSectionBG.src})` : `url(${heroSectionBGDark.src})` }}>
                 {children}
             </section>
         </>
