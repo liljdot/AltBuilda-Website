@@ -3,6 +3,7 @@ import ToggleTheme from "./components/ToggleTheme";
 import HeroSection from "./components/home/HeroSection";
 import WhyTrustSection from "./components/home/WhyTrustSection";
 import TransformSection from "./components/home/TransformSection";
+import GettingStartedSection from "./components/home/GettingStartedSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
           <HeroSection />
           <WhyTrustSection />
           <TransformSection />
+          <GettingStartedSection />
           <ToggleTheme />
         </div>
       </main>
