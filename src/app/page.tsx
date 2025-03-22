@@ -7,11 +7,13 @@ import TransformSection from "./components/home/TransformSection";
 export default function Home() {
   return (
     <>
-      <main className="p-0 bg-neutral">
-        <HeroSection />
-        <WhyTrustSection />
-        <TransformSection />
-        <ToggleTheme />
+      <main className="p-0 bg-neutral w-full">
+        <div className="max-w-450 mx-auto">
+          <HeroSection />
+          <WhyTrustSection />
+          <TransformSection />
+          <ToggleTheme />
+        </div>
       </main>
     </>
   );
